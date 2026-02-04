@@ -1,0 +1,15 @@
+services:
+  ponto:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/data
+    environment:
+      - TZ=America/Sao_Paulo
+      - DB_PATH=/data/ponto.db
+      - PHOTOS_DIR=/data/photos
+      - TEMPLATE_PATH=/data/template.npy
+      - INSIGHTFACE_HOME=/data/.insightface
+      - FACE_THRESHOLD=0.50
+      - ENROLL_DIR=/data/cadastros

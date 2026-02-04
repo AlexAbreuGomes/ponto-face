@@ -1,0 +1,15 @@
+# dados locais
+data/
+*.db
+*.npy
+
+# fotos
+photos/
+cadastros/
+
+# python
+__pycache__/
+*.pyc
+
+# env
+.env

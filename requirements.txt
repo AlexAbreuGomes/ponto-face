@@ -1,0 +1,6 @@
+streamlit==1.41.1
+numpy==1.26.4
+pillow==10.4.0
+onnxruntime==1.18.1
+insightface==0.7.3
+opencv-python-headless==4.10.0.84
