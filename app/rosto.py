@@ -1,5 +1,7 @@
 import numpy as np
 from insightface.app import FaceAnalysis
+from PIL import Image
+import io
 
 _APLICACAO = None
 
@@ -11,8 +13,6 @@ def obter_app():
     return _APLICACAO
 
 def bytes_imagem_para_rgb_np(bytes_imagem) -> np.ndarray:
-    from PIL import Image
-    import io
     imagem = Image.open(io.BytesIO(bytes_imagem)).convert("RGB")
     return np.array(imagem)
 
